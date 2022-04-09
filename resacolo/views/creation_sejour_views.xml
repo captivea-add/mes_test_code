@@ -36,6 +36,7 @@
         <field name="arch" type="xml">
           <form>
             <group>
+              <group>
               <field name="nom_sejour"/>
               <field name="organisateur"/>
               <field name="nb_place_max"/>
@@ -44,27 +45,36 @@
               <field name="tranche_age_max"/>
               <field name="tranche_age_min"/>
               <field name="tranche_age_max"/>
+              </group>
 
+              <group>
               <field name="date_debut_first"/>
               <field name="date_debut_scd"/>
               <field name="date_debut_thr"/>
               <field name="date_achat"/>
               <field name="periode"/>
+              </group>
 
+              <group>
               <field name="ville_depart"/>
               <field name="ville_arrivee"/>
+              </group>
 
+              <group>
               <field name="nom_option"/>
               <field name="description_option"/>
               <field name="prix_option_un"/>
               <field name="prix_option_deux"/>
               <field name="prix_option_trois"/>
+              </group>
 
+              <group>
               <field name="ref_sejour"/>
               <field name="description_sejour"/>
               <field name="prix_sejour_un"/>
               <field name="prix_sejour_deux"/>
               <field name="prix_sejour_trois"/>
+            </group>
             </group>
           </form>
         </field>
