@@ -41,6 +41,7 @@
             </group>
           </form>
         </field>
+        </record>
 
         <!--
         <field name="name">adresse Form</field>
