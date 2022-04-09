@@ -3,7 +3,7 @@
     <data>
       <!-- explicit list view definition -->
   
-      <record model="ir.ui.view" id="student_list_view">
+      <record model="ir.ui.view" id="participants_list_view">
         <field name="name">participants list</field>
         <field name="model">resacolo.participants</field>
         <field name="arch" type="xml">
@@ -18,7 +18,7 @@
         </field>
       </record>
   
-      <!-- explicit from view definition -->
+      <!-- explicit form view definition -->
   
       <record model="ir.ui.view" id="participants_form_view">
         <field name="name">participants form</field>
