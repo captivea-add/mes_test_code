@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+      <!-- explicit list view definition -->
+  
+      <record model="ir.ui.view" id="resacolo_tuteurs_list_views">
+        <field name="name">tuteuts list</field>
+        <field name="model">resacolo.tuteurs</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="f_name"/>
+            <field name="l_name"/>
+            <field name="sexe"/>
+            <field name="identity_card"/>
+            <field name="birthday"/>
+            <field name="start_date"/>
+          </tree>
+        </field>
+      </record>
+  
+      <!-- explicit form view definition -->
+  
+      <record model="ir.ui.view" id="tuteurs_form_view">
+        <field name="name">Tuteurs Form</field>
+        <field name="model">resacolo.tuteurs</field>
+        <field name="arch" type="xml">
+          <form>
+            <group>
+              <field name="f_name"/>
+              <field name="l_name"/>
+              <field name="sexe"/>
+              <field name="identity_card"/>
+              <field name="birthday"/>
+              <field name="start_date"/>
+              <field name="address"/>
+              <field name="email"/>
+              <field name="phone"/>
+            </group>
+          </form>
+        </field>
+      </record>
+
+      <!-- TODO FINIR DE MODIFIER LES VUES ICI -->
+
+      <!-- actions opening views on models -->
+  
+      <record model="ir.actions.act_window" id="tuteurs_action_window">
+        <field name="name">Tuteurs window</field>
+        <field name="res_model">resacolo.tuteurs</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+      <!-- menu categories -->
+  
+      <menuitem name="Tuteurs" id="resacolo_tuteurs_cat" parent="resacolo.menu_root"/>
+      <!--<menuitem name="Menu 2" id="university.menu_2" parent="university.menu_root"/>-->
+  
+      <!-- actions -->
+  
+      <menuitem name="List of tuteurs" id="resacolo_tuteurs_list" parent="resacolo_tuteurs_cat"
+                action="tuteurs_action_window"/>
+      <!--<menuitem name="Server to list" id="university" parent="university.menu_2"-->
+                <!--action="university.action_server"/>-->
+  
+    </data>
+  </odoo>

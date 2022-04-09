@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+      <!-- explicit list view definition -->
+  
+      <record model="ir.ui.view" id="participants_list_view">
+        <field name="name">participants list</field>
+        <field name="model">resacolo.participants</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name_participant"/>
+            <field name="sex"/>
+            <field name="birthday"/>
+            <field name="address"/>
+            <field name="street"/>
+            <field name="zip"/>
+            <field name="city"/>
+            <field name="registration_date"/>
+          </tree>
+        </field>
+      </record>
+  
+      <!-- explicit form view definition -->
+  
+      <record model="ir.ui.view" id="participants_form_view">
+        <field name="name">participants Form</field>
+        <field name="model">resacolo.participants</field>
+        <field name="arch" type="xml">
+          <form>
+            <group>
+              <field name="name_participant"/>
+              <field name="email"/>
+              <field name="phone"/>
+              <field name="sex"/>
+              <field name="birthday"/>
+              <field name="address"/>
+              <field name="street"/>
+              <field name="zip"/>
+              <field name="city"/>
+              <field name="registration_date"/>
+            </group>
+          </form>
+        </field>
+      </record>
+      <!-- actions opening views on models -->
+  
+      <record model="ir.actions.act_window" id="participants_action_window">
+        <field name="name">participants window</field>
+        <field name="res_model">resacolo.participants</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+
+      <!-- TODO FINIR DE MODIFIER LES VUES ICI -->
+      <!-- Top menu item -->
+
+      <!-- apres modif -->
+       <!-- avant modif
+      <menuitem name="participants" id="resacolo.menu_root"/>
+       -->
+      <menuitem name="resacolo" id="resacolo.menu_root"/>
+    
+
+      <!-- menu categories -->
+  
+      <menuitem name="participants" id="resacolo_participants_cat" parent="resacolo.menu_root"/>
+      <!--<menuitem name="Menu 2" id="university.menu_2" parent="university.menu_root"/>-->
+  
+      <!-- actions -->
+  
+      <menuitem name="list of participants" id="resacolo_participants_list" parent="resacolo_participants_cat"
+                action="participants_action_window"/>
+      <!--<menuitem name="Server to list" id="university" parent="university.menu_2"-->
+                <!--action="university.action_server"/>-->
+  
+    </data>
+  </odoo>

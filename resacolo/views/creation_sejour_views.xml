@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+      <!-- explicit list view definition -->
+      <record model="ir.ui.view" id="resacolo_creation_sejour_list_view">
+        <field name="name">creation sejour list</field>
+        <field name="model">resacolo.creation_sejour</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="nom_sejour"/>
+            <field name="organisateur"/>
+            <field name="nb_place_max"/>
+            <field name="compteur_place"/>
+            <field name="tranche_age_max"/>
+            <field name="tranche_age_min"/>
+
+            <field name="date_debut_first"/>
+            <field name="date_debut_scd"/>
+            <field name="date_debut_thr"/>
+            <field name="date_achat"/>
+
+            <field name="ref_sejour"/>
+            <field name="prix_sejour_un"/>
+            <field name="prix_sejour_deux"/>
+            <field name="prix_sejour_trois"/>
+
+          </tree>
+        </field>
+      </record>
+  
+      <!-- explicit form view definition -->
+  
+      <record model="ir.ui.view" id="resacolo_creation_sejour_form_view">
+        <field name="name">creation sejour Form</field>
+        <field name="model">resacolo.creation_sejour</field>
+        <field name="arch" type="xml">
+          <form>
+            <group>
+              <field name="nom_sejour"/>
+              <field name="organisateur"/>
+              <field name="nb_place_max"/>
+              <field name="nb_place_min"/>
+              <field name="compteur_place"/>
+              <field name="tranche_age_max"/>
+              <field name="tranche_age_min"/>
+              <field name="tranche_age_max"/>
+
+              <field name="date_debut_first"/>
+              <field name="date_debut_scd"/>
+              <field name="date_debut_thr"/>
+              <field name="date_achat"/>
+              <field name="periode"/>
+
+              <field name="ville_depart"/>
+              <field name="ville_arrivee"/>
+
+              <field name="nom_option"/>
+              <field name="description_option"/>
+              <field name="prix_option_un"/>
+              <field name="prix_option_deux"/>
+              <field name="prix_option_trois"/>
+
+              <field name="ref_sejour"/>
+              <field name="description_sejour"/>
+              <field name="prix_sejour_un"/>
+              <field name="prix_sejour_deux"/>
+              <field name="prix_sejour_trois"/>
+            </group>
+          </form>
+        </field>
+      </record>
+      <!-- actions opening views on models -->
+  
+      <record model="ir.actions.act_window" id="creation_sejour_action_window">
+        <field name="name">creation sejour window</field>
+        <field name="res_model">resacolo.creation_sejour</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+
+      <!-- TODO FINIR DE MODIFIER LES VUES ICI -->
+      <!-- Top menu item -->
+  
+      <menuitem name="resacolo" id="resacolo.menu_root"/>
+  
+      <!-- menu categories -->
+  
+      <menuitem name="Creation_sejour" id="resacolo_creation_sejour_cat" parent="resacolo.menu_root"/>
+      <!--<menuitem name="Menu 2" id="university.menu_2" parent="university.menu_root"/>-->
+  
+      <!-- actions -->
+  
+      <menuitem name="list of sejours" id="resacolo_creation_sejour_list_view" parent="resacolo_creation_sejour_cat"
+                action="creation_sejour_action_window"/>
+      <!--<menuitem name="Server to list" id="university" parent="university.menu_2"-->
+                <!--action="university.action_server"/>-->
+  
+    </data>
+  </odoo>
