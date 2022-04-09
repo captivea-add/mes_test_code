@@ -5,3 +5,7 @@
 .o_td_label {
     width: 50%;
 }
+
+label {
+    width: 50% !important;
+}

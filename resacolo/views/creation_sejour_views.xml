@@ -39,6 +39,9 @@
             <group>
               <table style="border: solid 1px !important;">
               <group>
+                <label>
+                  yest
+                </label>
               <field name="nom_sejour"/>
               <field name="organisateur"/>
               <field name="nb_place_max"/>
