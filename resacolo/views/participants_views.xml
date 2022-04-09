@@ -3,8 +3,8 @@
     <data>
       <!-- explicit list view definition -->
   
-      <record model="ir.ui.view" id="participants_list">
-        <field name="name">participants list</field>
+      <record model="ir.ui.view" id="participants_list_view">
+        <field name="name">participants.list.view </field>
         <field name="model">resacolo.participants</field>
         <field name="arch" type="xml">
           <tree>
@@ -20,7 +20,7 @@
   
       <!-- explicit form view definition -->
   
-      <record model="ir.ui.view" id="participants_form">
+      <record model="ir.ui.view" id="participants_form_view">
         <field name="name">participants form</field>
         <field name="model">resacolo.participants</field>
         <field name="arch" type="xml">
@@ -32,7 +32,7 @@
               <field name="phone"/>
               <field name="birthday"/>
               <field name="registration_date"/>
-              <field name = "adresse_diff"/>
+              <field name ="adresse_diff"/>
               <field name="zip"/>
               <field name="street"/>
               <field name="city"/>
@@ -75,7 +75,7 @@
   
       <!-- Top menu item -->
   
-      <menuitem name="Resacolo" id="resacolo.menu_root"/>
+      <menuitem name="resacolo" id="resacolo.menu_root"/>
   
       <!-- menu categories -->
   
@@ -84,7 +84,7 @@
   
       <!-- actions -->
   
-      <menuitem name="List of participants" id="resacolo_participants_list" parent="resacolo_participants_cat"
+      <menuitem name="List of participants" id="resacolo_participants_list_view" parent="resacolo_participants_cat"
                 action="participants_action_window"/>
       <!--<menuitem name="Server to list" id="university" parent="university.menu_2"-->
                 <!--action="university.action_server"/>-->
