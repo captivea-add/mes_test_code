@@ -20,7 +20,7 @@
   
       <!-- explicit form view definition -->
   
-      <record model="ir.ui.view" id="participants_form_view">
+      <record model="ir.ui.view" id="participants_form">
         <field name="name">participants form</field>
         <field name="model">resacolo.participants</field>
         <field name="arch" type="xml">
