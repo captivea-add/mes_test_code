@@ -26,9 +26,9 @@
             <group>
               <field name="f_name"/>
               <field name="l_name"/>
-              <field name="identity_card"/>
+              <field name="phone"/>
               <field name="birthday"/>
-              <field name="start_date"/>
+              <field name="choix_date"/>
               <field name="zip"/>
               <field name="street"/>
               <field name="city"/>
