@@ -80,6 +80,7 @@
               <field name="prix_sejour_deux"/>
               <field name="prix_sejour_trois"/>
             </group>
+            
           </table>
             </group>
           </form>
