@@ -3,7 +3,7 @@
     <data>
       <!-- explicit list view definition -->
   
-      <record model="ir.ui.view" id="participants_list_view">
+      <record model="ir.ui.view" id="participants_list">
         <field name="name">participants list</field>
         <field name="model">resacolo.participants</field>
         <field name="arch" type="xml">
