@@ -37,11 +37,9 @@
         <field name="arch" type="xml">
           <form>
             <group>
-              <table style="border: solid 1px !important;">
+              <table class="table-bordered" style="border: solid 1px !important;">
               <group>
-                <label>
-                  yest
-                </label>
+               
               <field name="nom_sejour"/>
               <field name="organisateur"/>
               <field name="nb_place_max"/>
@@ -80,7 +78,7 @@
               <field name="prix_sejour_deux"/>
               <field name="prix_sejour_trois"/>
             </group>
-            
+
           </table>
             </group>
           </form>
