@@ -18,8 +18,6 @@ class EventRegistration(models.Model):
         ondelete="restrict",
         copy=False,
     )
-    start_date_2 = fields.Date('date 2')
-    end_date_2 = fields.Date('date 2')
 
     def _prepare_partner(self, vals):
         return {
