@@ -38,7 +38,7 @@
         <form>
           <notebook>
             <group>
-              <table class="table-bordered" style="border: solid 1px !important;">
+              <table class="table-bordered" style="background:red !important;">
                 <group>
 
                   <field name="nom_sejour" />
