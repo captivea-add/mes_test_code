@@ -9,6 +9,8 @@
         <field name="arch" type="xml">
             <field name="name" position="after">
                 <field name="attendee_partner_id" />
+                <field name="start_date_2" />
+                <field name="end_date_2" />
             </field>
         </field>
     </record>
