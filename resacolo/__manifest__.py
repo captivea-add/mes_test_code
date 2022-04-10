@@ -23,5 +23,9 @@ Description relative à la gestion d’une agence de réservation de séjours .
         'views/templates.xml',
         #'views/subject_views.xml',
     ],
+    
+        "assets": {
+        "web.assets_backend": ["resacolo/static/src/css/style.css"],
+    },
    'demo': ['demo.xml'],
 }
