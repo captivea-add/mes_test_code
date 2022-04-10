@@ -13,5 +13,5 @@ class EventEvent(models.Model):
     create_partner = fields.Boolean(
         string="Create Partners in registration", default=False
     )
-    start_date_2 = fields.Date('Date 2')
-    end_date_2 = fields.Date('End Date 2')
+    #start_date_2 = fields.Date('Start date 2')
+    #end_date_2 = fields.Date('End Date 2')
