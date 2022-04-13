@@ -15,7 +15,7 @@ Description relative à la gestion d’une agence de réservation de séjours .
                ],
    # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/participants_views.xml',
         'views/creation_sejour_views.xml',
         'views/tuteurs_views.xml',
